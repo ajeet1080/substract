@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: substraction
           slot-name: "Production"
-          publish-profile: ${{ AZUREAPPSERVICE_PUBLISHPROFILE_7B6FDC200D4D418EA829872CAF212D24 }} # Publish profile should always be stored as secrets in your repository Settings - Secrets and variables - Actions - secrets
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7B6FDC200D4D418EA829872CAF212D24 }} # Publish profile should always be stored as secrets in your repository Settings - Secrets and variables - Actions - secrets
           package: .
